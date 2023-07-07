@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caprasimo&family=Ysabeau+SC:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: beige;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+    width: min(80vw, 600px);
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: .7rem;
+    max-height: 450px;
+    overflow: hidden;
+}
+
+.card__image img {
+    width: 100%;
+}
+
+
+.card__details {
+    padding: 2rem;
+    display: grid;
+    gap: 1em;
+}
+
+.little_title {
+    font-family: 'Ysabeau SC', sans-serif;
+    letter-spacing: 4px;
+    color: gray;
+}
+
+.main__title {
+    font-size: 2.2rem;
+    line-height: 1em;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.product__description {
+    color: gray;
+    font-size: .9rem;
+    line-height: 1.6em;
+}
+
+
+.prices .price__green {
+    color: green;
+    font-size: 2.3rem;
+    font-family:  'Caprasimo', cursive;
+    font-weight: 0;
+}
+
+.prices .price__gray{
+    color: gray;
+    font-size: .9rem;
+    text-decoration: line-through;
+}
+
+.card__button{
+    background-color: rgb(57, 150, 57);
+    color: white;
+    border-radius: 5px;
+    padding: .8em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+.card__button:hover{
+    background-color: rgb(2, 69, 2);
+    cursor: pointer;
+}
+.card__button span{
+    font-family: sans-serif;
+    font-weight: 700;
+}
